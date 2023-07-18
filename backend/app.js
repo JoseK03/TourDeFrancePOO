@@ -1,9 +1,8 @@
 import dotenv from "dotenv";
 import conectarDB from "./config/config.js";
 import Server from "./models/Server.js";
-
-const server = new Server();
 dotenv.config();
+const server = new Server();
 server.listenner();
 conectarDB();
 

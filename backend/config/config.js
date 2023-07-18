@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const conectarDB = async (req,res) =>{
+const conectarDB = async () =>{
     try {
         const connectDB = await mongoose.connect(process.env.MONGO_URI,{
             useNewUrlParser:true,
