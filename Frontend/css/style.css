@@ -64,10 +64,14 @@ main button:hover{
     color: var(--color-amarillo)!important;
 }
 
-section{
-    
+#contenedorTarjetas{
     background-color:var(--color-claro);
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .tarjetas{
