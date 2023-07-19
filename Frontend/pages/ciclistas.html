@@ -17,7 +17,7 @@
 <body>
     <header>
             <div class="logo">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="https://github.com/JoseK03/TourDeFrancePOO">
                 <img src="../accets/img/logo-tour-francia.png" alt="Logo" width="35" height="24" class="d-inline-block align-text-top">
                 Tour de France
               </a>
@@ -30,10 +30,10 @@
             </nav>
     </header>
     <main>
-        <button><i class="fa-solid fa-circle-plus fa-flip"></i></button>
-        <section class="container">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="fa-solid fa-circle-plus fa-flip"></i></button>
+        <section >
             <div class="tarjetas">
-                <img src="" alt="...">
+                <img src="../accets/img/cilcista.jpg" width="200px" alt="...">
                 <h4>Titulo</h4>
                 <p>Info 1</p>
                 <p>Info 2</p>
@@ -42,6 +42,35 @@
         </section>
     </main>
 
+    
+    
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <!------------------scripts-------------------->
     <!-- fontAwesome -->

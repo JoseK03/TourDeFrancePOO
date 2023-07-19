@@ -11,8 +11,7 @@
 }
 
 body{
-    height: 100vh;
-    width: 100%;
+ 
     background-color: var(--color-claro)!important;
 }
 
@@ -50,19 +49,31 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    padding: 10px 60px 10px 60px;
 }
 main button{
     border: none;
     padding: 20px;
-    font-size: xx-large;
-    color: #ce6d30;
+    font-size: xx-large !important;
+    color: #ce6d30 !important;
     background-color: var(--color-claro);
     width: 120px;
 }
 
 section{
-    height: 80vh;
+    
+    background-color:var(--color-claro);
     width: 100%;
-    background-color: #827870;
+}
+
+.tarjetas{
+    border: 2px solid var(--color-cafe);
+    width: 250px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px
 }
 
