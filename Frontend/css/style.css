@@ -56,9 +56,12 @@ main button{
     border: none;
     padding: 20px;
     font-size: xx-large !important;
-    color: #ce6d30 !important;
+    color: var(--color-cafe) !important;
     background-color: var(--color-claro);
     width: 120px;
+}
+main button:hover{
+    color: var(--color-amarillo)!important;
 }
 
 section{
@@ -76,4 +79,19 @@ section{
     align-items: center;
     padding: 15px
 }
+.contenido{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 60px;
+}
+
+.p2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
+
+    
 
