@@ -3,7 +3,7 @@ import {Schema,model,mongoose} from "mongoose";
 const ciclistasSchema = mongoose.Schema({
     nombre:{
         type:String,
-        required:[true, 'El nombre es requerido']
+        required:[true, 'El  nombre es requerido']
     },
     edad:{
         type:String,
