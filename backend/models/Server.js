@@ -34,10 +34,10 @@ class Server{
     }
 
     routes(){
-        this.app.use(this.ciclistasPath,grupoRouter);
-        this.app.use(this.equipoPath,ciclistasRouter);
-        this.app.use(this.etapasPath,equipoRouter);
-        this.app.use(this.gruposPath,etapasRouter);
+        this.app.use(this.ciclistasPath,ciclistasRouter);
+        this.app.use(this.equipoPath,equipoRouter);
+        this.app.use(this.etapasPath,etapasRouter);
+        this.app.use(this.gruposPath,grupoRouter);
     }
 
     listenner(){

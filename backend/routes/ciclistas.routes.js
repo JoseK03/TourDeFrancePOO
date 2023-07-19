@@ -11,8 +11,13 @@ router.get("/all", getCiclistas);
 router.post("/add",[
     check('nombre','el nombre es obligatorio').not().isEmpty(),
     check('edad','la edad es obligatorio').not().isEmpty(),
-    check('estatura','la estatura es obligatoria').not().isEmpty()
-], postCiclistas);
+    check('estatura','la estatura es obligatoria').not().isEmpty(),
+    check('equipo').custom(async(equipo='')=>{
+        const existeEquipo = await Equipo.findOne({equipo});
+        if(!existeEquipo){
+            throw new Error(`El equipo ${equipo} no esta registrado en la base de datos`)
+        }
+    }),validateDocuments], postCiclistas);
 router.delete("/del", deleteCiclistas);
 router.patch("/upd" , updateCiclistas);
 

@@ -1,6 +1,6 @@
 import {Schema,model,mongoose} from "mongoose";
 
-const ciclistasSchema = mongoose.Schema({
+const ciclistasSchema = Schema({
     nombre:{
         type:String,
         required:[true, 'El  nombre es requerido']

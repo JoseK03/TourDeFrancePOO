@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-amarillo: #e7d737;
+    --color-amarilloClaro: #f2e983;
+    --color-cafe: #201507;
+    --color-gris: #827870;
+    --color-claro: #f3eae8;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-claro)!important;
+}
+
+header{
+    background-color: var(--color-gris)!important;
+    padding: 20px 120px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    font-family: 'Angkor', cursive;
+    font-size: large;
+}
+
+nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-cafe);
+    font-family: 'Angkor', cursive;
+}
+
+nav a:hover{
+    color: var(--color-amarillo);
+    font-family: 'Angkor', cursive;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main button{
+    border: none;
+    padding: 20px;
+    font-size: xx-large;
+    color: #ce6d30;
+    background-color: var(--color-claro);
+    width: 120px;
+}
+
+section{
+    height: 80vh;
+    width: 100%;
+    background-color: #827870;
+}
+
