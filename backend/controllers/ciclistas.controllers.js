@@ -8,7 +8,7 @@ const getCiclistas = async (req,res) => {
 const postCiclistas = async (req,res) => {
     const nuevoCiclista = new Ciclistas(req.body);
     try {
-        const agregar = nuevoCiclista.save();
+        const agregar = await nuevoCiclista.save();
         res.json(agregar);
     } catch (error) {
         console.log(error);
